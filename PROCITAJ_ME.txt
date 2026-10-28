@@ -1,0 +1,65 @@
+CURSORGLOW STUDIO 3 - KURSOR S ORIGINALNE SLIKE + TRAGOVI
+=======================================================
+
+Instalacija/Nadogradnja na Windows 11 (radi i na Windows 10):
+  1. Raspakiraj CIJELI ZIP u mapu.
+  2. Pokreni INSTALIRAJ_V3.cmd dvostrukim klikom.
+  3. Otvorit ce se CursorGlow Studio 3 s tri kartice:
+     - SVJETLOSNI EFEKT (stalni plavi glow)
+     - TRAGOVI I EFEKTI (trag dok pomicem mis)
+     - IZGLED KURSORA (oblik, boja, velicina, vlastiti kursori)
+
+KURSOR KAO NA PRVOJ SLICI
+  U kartici IZGLED KURSORA izaberi posljednji oblik:
+    'KAO NA SLICI - crni trokut s bijelim rubom'
+  Boja: Crna
+  Velicina: Normalna (po zelji Mala ako je na zaslonu prevelik)
+  Klikni PRIMIJENI ODABRANI KURSOR U WINDOWSU.
+  To je novi, rucno nacrtan kursor prema dostavljenom screenshotu.
+  Nije izdvojena originalna .cur datoteka iz Power Apps Studio.
+
+TRAGOVI
+  Stalno ukljuceni tragovi mogu se iskljuciti kvacicom ili preko tray ikone.
+  Dostupni stilovi (7):
+    1. Meki svjetlosni trag
+    2. Neonska linija
+    3. Svjetlece tockice
+    4. Iskre i zvjezdice
+    5. Svilena vrpca
+    6. Kometa
+    7. Mini kursori
+  Podesavanje: duljina (60-700 px), vrijeme nestajanja (150-1600 ms),
+  debljina (2-28 px), intenzitet (10-100%), gustoca (1-6), boja.
+  Predefinirani profili: Diskretni, Gaming neon, Duga kometa, Iskrice.
+  Boju traga mozes sinkronizirati s bojom stalnog glow-a ili izabrati posebno.
+
+TRAGOVI SU SAMOSTALNI
+  Mozes imati samo glow, samo tragove, oboje ili ni jedno.
+  Tragovi su click-through (klikovi prolaze kroz njih), bez snimanja misem
+  kliknutih podataka i bez globalnih input hookova. Radi u pozadini kroz tray.
+  Na UAC secure desktopu ili u ekskluzivnim fullscreen aplikacijama efekt se
+  mozda nece prikazivati.
+
+CUVANJE POSTAVKI
+  Stara datoteka settings.ini ostaje na svojem mjestu i prosiruje se novim
+  postavkama tragova. Datoteka original-cursors.ini ostaje NETAKNUTA.
+  Stari odabir kursora nakon nadogradnje ostaje aktivan sve dok ne odaberes
+  'KAO NA SLICI' i kliknes Primijeni. Tako se ne mijenjaju nenajavljeno
+  tvoje Windows postavke.
+  Novi program instalira se u %LOCALAPPDATA%\CursorGlowStudio.
+
+VRACANJE / UKLANJANJE
+  Za povrat izvornog Windows kursora klikni VRATI PRETHODNE WINDOWS KURSORE.
+  Za potpuno uklanjanje pokreni UKLONI_I_VRATI_KURSOR.cmd.
+  Nemoj rucno brisati original-cursors.ini dok ti treba povrat starog seta.
+
+TEHNICKI
+  - Instalacija lokalno kompajlira .NET Framework 4.x C# kod (csc.exe).
+  - Nisu potrebni PowerToys, AutoHotkey, administrator ni Internet.
+  - Lokalni prozirni Windows sloj (UpdateLayeredWindow), bez mreznog prometa.
+  - Nema tipkanja PowerShell naredbi; instalacijska .cmd radi sve.
+  - Datoteke kursora su standardne Windows .cur datoteke.
+  - Postavke se ne salju nikamo i ne pohranjuje se povijest kretanja misa.
+  - Trenutno nije moguce testirati stvarno izvrsavanje na Windowsu 11 u
+    okruzenju izrade. Ako instalacija prijavi C# gresku, posalji screenshot
+    poruke iz CMD prozora; stari .exe je sacuvan ako kompilacija nije prosla.
